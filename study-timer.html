@@ -1688,6 +1688,7 @@
       if (isBreak) return; // 休憩中は一時停止できない
       clearInterval(timerId);
       isRunning = false;
+      timerEndsAt = null;
       updateStartBtnState();
       updateModeLabel();
       render();
